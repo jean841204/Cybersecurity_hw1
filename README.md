@@ -24,7 +24,12 @@ Where:
 
 ## 🚀 Quick Start
 
-### Installation
+### 🌐 Demo Website
+**Live Demo**: https://cybersecurityhw1-jeanchen.streamlit.app/
+
+Try the interactive tool directly in your browser - no installation required!
+
+### 💻 Local Development
 ```bash
 # Clone or download the project
 cd linear_regression_app
@@ -36,7 +41,6 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-### Access
 Open your browser and visit: `http://localhost:8501`
 
 ## 🎛️ How to Use
