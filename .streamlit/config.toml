@@ -1,0 +1,23 @@
+[global]
+# 設定應用程式的開發模式
+developmentMode = false
+
+[server]
+# 伺服器設定
+port = 8501
+enableCORS = true
+enableXsrfProtection = false
+maxUploadSize = 200
+headless = true
+
+[browser]
+# 瀏覽器設定
+gatherUsageStats = false
+
+[theme]
+# 主題設定
+primaryColor = "#1f77b4"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f0f2f6"
+textColor = "#262730"
+font = "sans serif"
