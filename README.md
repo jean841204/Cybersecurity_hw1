@@ -1,5 +1,94 @@
 # Linear Regression Interactive Analysis Tool
 
+## 🌐 Demo Website
+**Live Demo**: https://cybersecurityhw1-jeanchen.streamlit.app/
+
+Try the interactive tool directly in your browser - no installation required!
+
+## CRISP-DM流程規劃
+
+### 1. Business Understanding（業務理解）
+**目標：**
+- 建立教育性質的線性回歸演示工具
+- 幫助用戶理解線性回歸的基本概念
+- 展示不同參數對模型性能的影響
+
+**成功指標：**
+- 系統能夠正確生成和分析線性數據
+- 用戶界面直觀易用
+- 回歸分析結果準確
+
+### 2. Data Understanding（數據理解）
+**數據來源：**
+- 程式生成的合成數據
+- 基於用戶設定的參數：y = ax + b + noise
+
+**數據特徵：**
+- X：自變量（連續數值）
+- Y：因變量（連續數值，含雜訊）
+- 數據點數量：用戶可調整（10-1000點）
+
+**探索性數據分析：**
+- 數據分佈視覺化
+- 統計描述（均值、標準差、範圍）
+- 相關性分析
+
+### 3. Data Preparation（數據準備）
+**數據生成流程：**
+```
+1. 生成X值序列（等間距或隨機）
+2. 根據公式計算理論Y值：Y_theory = a*X + b
+3. 添加高斯雜訊：Y_actual = Y_theory + noise
+4. 數據標準化（可選）
+```
+
+**數據品質檢查：**
+- 檢查缺失值
+- 異常值檢測
+- 數據範圍驗證
+
+### 4. Modeling（建模）
+**模型選擇：**
+- 簡單線性回歸（Ordinary Least Squares）
+- 使用scikit-learn LinearRegression
+
+**模型訓練：**
+```
+1. 訓練集/測試集分割（80/20）
+2. 模型擬合
+3. 預測結果生成
+```
+
+**模型參數：**
+- 回歸係數（斜率）
+- 截距
+- 相關係數（R²）
+
+### 5. Evaluation（評估）
+**評估指標：**
+- R² Score（決定係數）
+- Mean Squared Error (MSE)
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+
+**視覺化評估：**
+- 散點圖與回歸線
+- 殘差分析圖
+- 預測值vs實際值圖
+
+### 6. Deployment（部署）
+**技術架構：**
+- 前端：Streamlit
+- 後端：Python科學計算庫
+- 部署：本地運行或雲端平台
+
+**用戶界面設計：**
+- 參數調整面板
+- 實時結果顯示
+- 互動式圖表
+
+---
+
 A simple and intuitive web application for exploring linear regression concepts with real-time parameter adjustment and outlier detection.
 
 ## 🌟 Features
@@ -24,10 +113,6 @@ Where:
 
 ## 🚀 Quick Start
 
-### 🌐 Demo Website
-**Live Demo**: https://cybersecurityhw1-jeanchen.streamlit.app/
-
-Try the interactive tool directly in your browser - no installation required!
 
 ### 💻 Local Development
 ```bash
